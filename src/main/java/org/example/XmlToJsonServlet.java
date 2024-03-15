@@ -19,7 +19,7 @@ public class XmlToJsonServlet {
         int port = 9091;
         HttpServer server = HttpServer.create(new InetSocketAddress("127.0.0.1", port), 0);
         server.createContext("/", new MyHandler());
-        server.setExecutor(null); // creates a default executor
+        server.setExecutor(null); 
         server.start();
         System.out.println("Server started on port " + port);
     }
@@ -40,7 +40,6 @@ public class XmlToJsonServlet {
 
                     String jsonString = convertXMLtoJSON(xmlBody.toString());
 
-                    // Save JSON to file
                     saveToFile(jsonString);
 
                     exchange.sendResponseHeaders(200, jsonString.length());
@@ -70,7 +69,6 @@ public class XmlToJsonServlet {
         try (FileWriter writer = new FileWriter(file, true);
              PrintWriter out = new PrintWriter(writer)) {
             long recordsCount = getRecordCount(file);
-            // Write record count only if it's the first record in the file
             if (recordsCount == 0) {
                 writer.write("Record count: " + (recordsCount + 1) + "\n");
             }
