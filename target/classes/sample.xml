@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Data>
+    <Method>
+        <Name>Order</Name>
+        <Type>Services</Type>
+        <Assembly>ServiceRepository, Version=1.0.0.1, Culture=neutral,
+            PublicKeyToken=null</Assembly>
+    </Method>
+    <Process>
+        <Name>scheduler.exe</Name>
+        <Id>185232</Id>
+        <Start>
+            <Epoch>1464709722277</Epoch>
+            <Date>2016-05-31T12:07:42.2771759+03:00</Date>
+        </Start>
+    </Process>
+    <Layer>DailyScheduler</Layer>
+    <Creation>
+        <Epoch>1464709728500</Epoch>
+        <Date>2016-05-31T07:48:21.5007982+03:00</Date>
+    </Creation>
+    <Type>Information</Type>
+    </Data>
